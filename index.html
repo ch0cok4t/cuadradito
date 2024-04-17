@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animación de Cuadrado</title>
+<style>
+    @keyframes moveAndChangeColor {
+        0% {
+            background-color: red;
+            transform: translateX(0);
+        }
+        25% {
+            background-color: blue;
+            transform: translateX(100px);
+        }
+        50% {
+            background-color: green;
+            transform: translateY(100px);
+        }
+        75% {
+            background-color: yellow;
+            transform: translateY(0);
+        }
+        100% {
+            background-color: red;
+            transform: translateX(0);
+        }
+    }
+
+    .square {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: moveAndChangeColor 4s infinite;
+    }
+</style>
+</head>
+<body>
+    <div class="square"></div>
+</body>
+</html>
